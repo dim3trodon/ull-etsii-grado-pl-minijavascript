@@ -1,7 +1,7 @@
 Lab: Lexical Analyzer for a Mini JavaScript language
 Fill the empty/underscore gaps in each file.
 
-Véase Douglas Crockford http://javascript.crockford.com/tdop/tdop.html
+See Douglas Crockford http://javascript.crockford.com/tdop/tdop.html
 
 * tdop.html Crockford article: contains a description of 
             Vaughn Pratt's Top Down Operator Precedence,
