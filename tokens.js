@@ -52,7 +52,7 @@ String.prototype.tokens = function () {
     while (i < this.length) {
         WHITES.lastIndex =  ID.lastIndex = NUM.lastIndex = STRING.lastIndex =
         ONELINECOMMENT.lastIndex = MULTIPLELINECOMMENT.lastIndex =
-        TWOCHAROPERATORS.lastIndex = ONECHAROPERATORS.lastIndex = 0;
+        TWOCHAROPERATORS.lastIndex = ONECHAROPERATORS.lastIndex = i;
         from = i;
         // Ignore whitespace.
         if (m = WHITES.bexec(this)) {
@@ -61,7 +61,6 @@ String.prototype.tokens = function () {
         // name.
         } else if (m = ID.bexec(this)) {
             str = m[0];
-            //n = str;
             i += str.length;
             result.push(make('name', str));
 
